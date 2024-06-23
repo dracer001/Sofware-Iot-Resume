@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+
+  <style>
+    /* styles.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-right: 20px;
+}
+
+.profile .info {
+  text-align: left;
+}
+
+.profile .info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile .info h1 span {
+  color: #2196F3;
+}
+
+.profile .info ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.profile .info ul li {
+  margin-bottom: 5px;
+}
+
+.download-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.skills {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.professional-skills, .additional-skills {
+  margin-bottom: 20px;
+}
+
+.professional-skills ul, .additional-skills .skill {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.professional-skills ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar {
+  background-color: #ddd;
+  width: 100%;
+  height: 10px;
+  margin: 0 10px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress {
+  background-color: #4CAF50;
+  height: 100%;
+}
+
+.additional-skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.skill {
+  text-align: center;
+}
+
+.outer-circle {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(#4CAF50 0deg, #ddd 0deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.inner-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4CAF50;
+}
+
+.education {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.education h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.timeline-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-left: 5px solid #2196F3;
+  margin: 10px 0;
+  width: 45%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item .date {
+  background-color: #2196F3;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.timeline-item .content {
+  padding: 10px;
+}
+
+.timeline-item .content h3 {
+  margin: 0;
+}
+
+.timeline-item .content p {
+  margin: 5px 0;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="profile.jpg" alt="Profile Picture">
+      <div class="info">
+        <h1>HI I'M <span>ROBERT SMITH</span></h1>
+        <p>Web Developer & Web Designer</p>
+        <p>Hello! I'm Robert Smith. Web Developer with over 8 years of experience...</p>
+        <ul>
+          <li><strong>Age:</strong> 26</li>
+          <li><strong>Address:</strong> 6235, London, Earth, BE 45</li>
+          <li><strong>Email:</strong> robertsmith@gmail.com</li>
+          <li><strong>Phone:</strong> +123 456 789 012</li>
+          <li><strong>Website:</strong> www.robertsmith.com</li>
+          <li><strong>Nationality:</strong> American</li>
+        </ul>
+      </div>
+    </div>
+    <button class="download-btn">Download Resume</button>
+  </header>
+
+  <section class="skills">
+    <h2>SKILLS</h2>
+    <div class="professional-skills">
+      <h3>Professional Skills</h3>
+      <ul>
+        <li>HTML & CSS <span class="bar"><span class="progress" style="width: 90%;"></span></span> 90%</li>
+        <li>WordPress <span class="bar"><span class="progress" style="width: 75%;"></span></span> 75%</li>
+        <li>JavaScript <span class="bar"><span class="progress" style="width: 85%;"></span></span> 85%</li>
+        <li>Laravel <span class="bar"><span class="progress" style="width: 70%;"></span></span> 70%</li>
+        <li>Photoshop <span class="bar"><span class="progress" style="width: 65%;"></span></span> 65%</li>
+      </ul>
+    </div>
+    <div class="additional-skills">
+      <h3>Additional Skills</h3>
+      <div class="skill">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <div class="number" id="progress1">0%</div>
+          </div>
+        </div>
+        <p>English</p>
+      </div>
+      <div class="skill">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <div class="number" id="progress2">0%</div>
+          </div>
+        </div>
+        <p>Creativity</p>
+      </div>
+      <div class="skill">
+        <div class="outer-circle">
+          <div class="inner-circle">
+            <div class="number" id="progress3">0%</div>
+          </div>
+        </div>
+        <p>Teamwork</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="education">
+    <h2>EDUCATION</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="date">2014 - 2016</div>
+        <div class="content">
+          <h3>Web Master / Web Developer</h3>
+          <p>Oxford University</p>
+          <p>I completed this degree from this prestigious institution...</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="date">2012 - 2014</div>
+        <div class="content">
+          <h3>Software Engineering</h3>
+          <p>Oxford University</p>
+          <p>I completed this degree from this prestigious institution...</p>
+        </div>
+      </div>
+      <!-- Add more timeline items as needed -->
+    </div>
+  </section>
+
+  <script>
+    // script.js
+
+function setProgress(elementId, percent) {
+  const numberElement = document.getElementById(elementId);
+  const outerCircle = numberElement.closest('.outer-circle');
+  const angle = percent * 3.6; // 360 degrees for 100%
+
+}
+  </script>
+</body>
+</html>
