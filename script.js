@@ -1,26 +1,26 @@
 // script.js
 
-document.getElementById('d-resume').addEventListener('click', () => {
-    const element = document.querySelector('main').cloneNode(true)
-    element.querySelector('.hero-btn').style.display='none'
-    element.style.width='100%'
-    element.style.margin='0'
-    element.style.marginLeft='-1rem'
-    element.style.backgroundImage ='linear-gradient(to bottom, #d9dff3 , #b6c0e0)'
-    var opt = {
-        margin:       0,
-        pagebreak: {after:'section'},
-        enableLinks: true,
-        filename:     'olubanjo david-resume.pdf',
-        image:        { type: 'jpeg', quality: 1 },
-        html2canvas:  { scale: 2 },
-        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
-      };
-      // New Promise-based usage:
-    html2pdf().set(opt).from(element).save();
+// document.getElementById('d-resume').addEventListener('click', () => {
+//     const element = document.querySelector('main').cloneNode(true)
+//     element.querySelector('.hero-btn').style.display='none'
+//     element.style.width='100%'
+//     element.style.margin='0'
+//     element.style.marginLeft='-1rem'
+//     element.style.backgroundImage ='linear-gradient(to bottom, #d9dff3 , #b6c0e0)'
+//     var opt = {
+//         margin:       0,
+//         pagebreak: {after:'section'},
+//         enableLinks: true,
+//         filename:     'olubanjo david-resume.pdf',
+//         image:        { type: 'jpeg', quality: 1 },
+//         html2canvas:  { scale: 2 },
+//         jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+//       };
+//       // New Promise-based usage:
+//     html2pdf().set(opt).from(element).save();
 
-    // var worker = html2pdf().from(element).toPdf() .save('olubanjo david-resume.pdf');
-});
+//     // var worker = html2pdf().from(element).toPdf() .save('olubanjo david-resume.pdf');
+// });
 
 
 function setProgress(elementId, percent) {
@@ -96,13 +96,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 if(entry.target.id == 'skills'){
                     // Set progress for each skill
                     setTimeout(() => {
-                        setProgress('progress1', 90); // HTML/CSS
-                        setProgress('progress2', 80); // Creativity
-                        setProgress('progress3', 65); // 
-                        setProgress('progress4', 75); // 
-                        setProgress('progress5', 70); // 
-                        setProgress('progress6', 90); // Arduino
-                        setProgress('progress7', 60); // Raspberry pi
+                        setProgress('progress1', 80); // Express.js
+                        setProgress('progress2', 85); // Flask
+                        setProgress('progress3', 70); // Laravel
+                        setProgress('progress4', 75); // React
+                        setProgress('progress5', 75); // Bootstrap
+                        setProgress('progress6', 70); // Tailwind css
+                        setProgress('progress7', 85); // Mysql
+                        setProgress('progress8', 80); // Mongo DB
+                        setProgress('progress9', 85); // Arduino
+                        setProgress('progress10', 60); // Raspberry pi
                         }, 1000);
                 }
                 observer.unobserve(entry.target);
